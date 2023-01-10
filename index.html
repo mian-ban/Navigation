@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>快捷导航</title>
+    <link rel="icon" href="navigation.ico" />
+
+    <script type="text/javascript">
+      var mobileAgent = new Array(
+        "iphone",
+        "ipod",
+        "ipad",
+        "android",
+        "mobile",
+        "blackberry",
+        "webos",
+        "incognito",
+        "webmate",
+        "bada",
+        "nokia",
+        "lg",
+        "ucweb",
+        "skyfire"
+      );
+      var browser = navigator.userAgent.toLowerCase();
+      var isMobile = false;
+      for (var i = 0; i < mobileAgent.length; i++) {
+        if (browser.indexOf(mobileAgent[i]) != -1) {
+          isMobile = true;
+          location.href = "phone.html";
+          break;
+        }
+      }
+    </script>
+
+    <style>
+      .YuanJiaoJuXing {
+        border-radius: 25px;
+        background-color: rgb(226, 226, 226);
+        padding: 20px;
+        width: 350px;
+        height: 125px;
+      }
+
+      .box {
+        display: flex;
+      }
+
+      a {
+        display: block;
+        color: black;
+        text-decoration: none;
+      }
+
+      .mgl20 {
+        margin-left: 20%;
+      }
+      .mgr20 {
+        margin-right: 20%;
+      }
+      .mgt20 {
+        margin-top: 5%;
+      }
+
+      .TouBu {
+        border-radius: 25px;
+        display: block;
+        background: rgb(240, 243, 241);
+        height: 256px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 头部栏 -->
+    <div class="TouBu">
+      <img
+        src="navigation.png"
+        alt="导航图标"
+        width="100px"
+        style="margin-top: 50px; margin-left: 37%"
+      />
+      <h1 style="font-size: 72px; margin-top: -125px; margin-left: 43%">
+        快捷导航
+      </h1>
+    </div>
+    <!-- 内容 -->
+    <p style="text-align: center"><b>点击下方图标跳转网页</b></p>
+    <div style="display: block">
+      <!-- 列01 -->
+      <div class="box">
+        <!-- 区块01 -->
+        <div class="mgl20 mgr20">
+          <a href="https://www.bilibili.com" target="_blank">
+            <div class="YuanJiaoJuXing box">
+              <img src="bilibili.png" alt="B站" />
+              <p style="font-size: 64px; margin-left: 5%; margin-top: 5%">
+                bilibili
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- 区块02 -->
+        <div class="mgr20">
+          <a href="https://www.baidu.com" target="_blank">
+            <div class="YuanJiaoJuXing">
+              <img
+                src="baidu.png"
+                alt="百度"
+                width="110px"
+                style="margin-top: 2%"
+              />
+              <p style="font-size: 64px; margin-left: 45%; margin-top: -100px">
+                百度
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 列02 -->
+      <div class="box">
+        <!-- 区块01 -->
+        <div class="mgl20 mgr20 mgt20">
+          <a href="https://www.ixigua.com/" target="_blank">
+            <div class="YuanJiaoJuXing box">
+              <img src="xigua.ico" alt="西瓜" />
+              <p style="font-size: 50px; margin-left: 5%; margin-top: 7%">
+                西瓜视频
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- 区块02 -->
+        <div class="mgr20 mgt20">
+          <a href="https://github.com/" target="_blank">
+            <div class="YuanJiaoJuXing">
+              <img
+                src="github.png"
+                alt="github"
+                width="180px"
+                style="margin-left: -30px"
+              />
+              <p style="font-size: 55px; margin-left: 42%; margin-top: -100px">
+                GitHub
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 列03 -->
+      <div class="box">
+        <!-- 区块01 -->
+        <div class="mgl20 mgr20 mgt20">
+          <a href="https://www.douyin.com/" target="_blank">
+            <div class="YuanJiaoJuXing box">
+              <img src="douyin.png" alt="抖音" />
+              <p style="font-size: 72px; margin-left: 12%; margin-top: 5%">
+                抖音
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- 区块02 -->
+        <div class="mgr20 mgt20">
+          <a href="https://mian-ban.github.io/index.html" target="_blank">
+            <div class="YuanJiaoJuXing">
+              <img
+                src="GeRenJieShao.png"
+                alt="GeRenJieShao"
+                width="120px"
+                style="margin-left: 0px"
+              />
+              <p style="font-size: 50px; margin-left: 42%; margin-top: -100px">
+                个人介绍
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+    <div
+      style="
+        display: block;
+        margin-top: 5%;
+        background: rgb(44, 44, 44);
+        height: 125px;
+        width: 100%;
+      "
+    >
+      <p style="color: rgb(240, 237, 237); text-align: center; padding: 62px">
+        <abbr title="由面板(胡洛源)所搭建的网站，仅为实践练习"
+          >Built by Hu Luoyuan</abbr
+        >
+      </p>
+    </div>
+  </body>
+</html>
